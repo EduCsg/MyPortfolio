@@ -1,0 +1,60 @@
+.navbar-items {
+	display: flex;
+	background-color: transparent;
+	justify-content: end;
+	position: absolute;
+	right: 5%;
+	top: 2%;
+}
+
+.navbar-items a li {
+	transition: all 400ms;
+	border-radius: 5%;
+	padding: 20px;
+	margin: 0 10px;
+}
+
+.navbar-items a li:hover {
+	cursor: pointer;
+	filter: blur(20%);
+	background-color: white;
+	color: black;
+	scale: 1.05;
+}
+
+.navbar-items a {
+	color: white;
+	font-size: 1.2rem;
+	font-family: var(--font-first);
+	text-decoration: none;
+}
+
+.download-btn {
+	display: flex;
+	text-align: center;
+}
+
+.download-icon {
+	padding-left: 8px;
+	height: 18px;
+	filter: invert(100%);
+	transition: all 400ms;
+}
+
+.download-gif {
+	padding-left: 8px;
+	height: 18px;
+	filter: invert(100%);
+	transition: all 400ms;
+	display: none;
+}
+
+.navbar-items a li:hover .download-icon {
+	filter: invert(0%);
+	display: none;
+}
+
+.navbar-items a li:hover .download-gif {
+	filter: invert(0%);
+	display: block;
+}

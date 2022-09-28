@@ -11,7 +11,69 @@
 			rel="stylesheet"
 		/>
 
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/nav-bar.css" />
+		<link rel="stylesheet" href="css/bg-wrapper.css" />
+		<link rel="stylesheet" href="css/header-banner.css" />
+
 		<title>Meu Portfólio</title>
 	</head>
-	<body></body>
+	<body>
+		<a href="#home">
+			<img class="arrow-up" src="./assets/arrow-up.svg" alt="Seta para cima" />
+		</a>
+
+		<header id="home" class="main-header">
+			<nav class="header-navbar">
+				<!-- Logo Edu Csg -->
+
+				<ul class="navbar-items">
+					<a href="#cursos">
+						<li>Cursos</li>
+					</a>
+
+					<a href="#skills">
+						<li>Skills</li>
+					</a>
+
+					<a href="#contato">
+						<li>Contato</li>
+					</a>
+
+					<a
+						href="./certificados/Certificado CCPA Inglês.png"
+						download="CV_Eduardo_Casagrande"
+					>
+						<li class="download-btn">
+							Download CV
+							<img
+								src="./assets/download.png"
+								class="download-icon"
+								alt="Ícone para Download"
+							/>
+							<img
+								class="download-gif"
+								src="./assets/download.gif"
+								alt="Gif de download"
+							/>
+						</li>
+					</a>
+				</ul>
+			</nav>
+
+			<div id="home" class="bg-wrapper">
+				<img
+					src="https://images.unsplash.com/photo-1605379399642-870262d3d051?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1381&q=80"
+					alt="Imagem de Fundo"
+				/>
+			</div>
+
+			<div class="header-banner">
+				<h1 class="header-title">Web & Mobile Front End Developer</h1>
+				<p class="header-name">Eduardo Casagrande</p>
+			</div>
+		</header>
+
+		<script src="./js/arrow-up.js"></script>
+	</body>
 </html>

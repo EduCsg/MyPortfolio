@@ -1,0 +1,19 @@
+.header-banner {
+	position: absolute;
+	top: 25%;
+	left: 10%;
+}
+
+.header-title {
+	color: #fff;
+	font-size: 3rem;
+	font-family: var(--font-first);
+	margin-bottom: 1.5rem;
+}
+
+.header-name {
+	color: #fff;
+	font-size: 2rem;
+	font-family: var(--font-second);
+	margin-bottom: 2.5rem;
+}
