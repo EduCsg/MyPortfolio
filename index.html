@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="css/nav-bar.css" />
 		<link rel="stylesheet" href="css/bg-wrapper.css" />
 		<link rel="stylesheet" href="css/header-banner.css" />
+		<link rel="stylesheet" href="css/slide-cursos.css" />
 
 		<title>Meu Portfólio</title>
 	</head>
@@ -40,10 +41,7 @@
 						<li>Contato</li>
 					</a>
 
-					<a
-						href="./certificados/Certificado CCPA Inglês.png"
-						download="CV_Eduardo_Casagrande"
-					>
+					<a href="#" download="CV_Eduardo_Casagrande">
 						<li class="download-btn">
 							Download CV
 							<img
@@ -61,7 +59,7 @@
 				</ul>
 			</nav>
 
-			<div id="home" class="bg-wrapper">
+			<div class="bg-wrapper">
 				<img
 					src="https://images.unsplash.com/photo-1605379399642-870262d3d051?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1381&q=80"
 					alt="Imagem de Fundo"
@@ -74,6 +72,142 @@
 			</div>
 		</header>
 
+		<section id="cursos" class="main-certificacoes">
+			<div class="main-title-cursos">
+				<h1>Cursos</h1>
+			</div>
+
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<a href="https://www.twitch.tv/marcobrunodev" class="marcobrunodev">
+						<img
+							class="img-curso"
+							src="assets/logo-firedlabs.png"
+							alt="Instituto Mix"
+						/>
+					</a>
+
+					<div class="slide-text firedlabs">
+						<div>
+							<h2 class="title-cursos">FiredLabs</h2>
+							<p class="content-description-cursos">
+								Curso HTML e CSS (+60 Vídeos)
+							</p>
+						</div>
+						<div>
+							<p
+								class="content-description-cursos"
+								style="padding-bottom: 10px"
+							>
+								Curso feito por
+							</p>
+							<div class="marcobrunodev">
+								<a
+									href="https://www.twitch.tv/marcobrunodev"
+									class="marcobrunodev"
+								>
+									<img
+										src="https://www.freepnglogos.com/uploads/twitch-app-logo-png-3.png"
+										style="max-width: 30px"
+										alt=""
+									/>
+									<p>Marco Bruno Dev</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="mySlides fade">
+					<a href="https://www.facebook.com/escolaccpa" target="_blank">
+						<img class="img-curso" src="assets/ccpa.png" alt="CCPA" />
+					</a>
+					<div class="slide-text">
+						<h2 class="title-cursos">
+							CCPA<br />(Centro de Capacitação Profissional<br />do Adolescente)
+						</h2>
+						<p class="content-description-cursos">
+							Montagem e Manutenção de Computadores (145 Horas)
+						</p>
+						<p class="content-description-cursos">Inglês Básico (145 Horas)</p>
+					</div>
+				</div>
+
+				<div class="mySlides fade">
+					<a href="https://www.cursoemvideo.com" target="_blank">
+						<img
+							class="img-curso"
+							src="assets/CursoEmVideo.png"
+							alt="Curso em vídeo"
+						/>
+					</a>
+					<div class="slide-text">
+						<h2 class="title-cursos">Curso em Vídeo</h2>
+						<p class="content-description-cursos">JavaScript (40 Horas)</p>
+					</div>
+				</div>
+
+				<div class="mySlides fade">
+					<a href="https://www.institutomix.com" target="_blank">
+						<img
+							class="img-curso"
+							src="assets/InstitutoMix.png"
+							alt="Instituto Mix"
+						/>
+					</a>
+
+					<div class="slide-text">
+						<h2 class="title-cursos">Instituto Mix</h2>
+						<p class="content-description-cursos">
+							Lógica de Programação (100 Horas)
+						</p>
+					</div>
+				</div>
+
+				<div class="mySlides fade">
+					<a href="https://digitalinnovation.one" target="_blank">
+						<img
+							class="img-curso"
+							src="assets/digitalinnovationone.png"
+							alt="Digital Innovation One"
+						/>
+					</a>
+
+					<div class="slide-text">
+						<h2 class="title-cursos">Digital Innovation One</h2>
+						<p class="content-description-cursos">JavaScript (2 Horas)</p>
+						<p class="content-description-cursos">
+							Estrutura de Dados e Algorítmos (2 Horas)
+						</p>
+						<p class="content-description-cursos">
+							Introdução ao Git e GitHub (5 Horas)
+						</p>
+						<p class="content-description-cursos">
+							Introdução HTML5 e CSS3 (6 Horas)
+						</p>
+						<p class="content-description-cursos">
+							Lógica de Programação Essencial (4 Horas)
+						</p>
+					</div>
+				</div>
+
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br />
+
+			<!-- The dots/circles -->
+			<div class="dot-wrapper" style="text-align: center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+				<span class="dot" onclick="currentSlide(5)"></span>
+			</div>
+		</section>
+
 		<script src="./js/arrow-up.js"></script>
+		<script src="./js/slide-cursos.js"></script>
 	</body>
 </html>
