@@ -1,4 +1,6 @@
 let slideIndex = 1;
+var sec = 2;
+
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -11,6 +13,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
 	let i;
+
 	let slides = document.getElementsByClassName("mySlides");
 	let dots = document.getElementsByClassName("dot");
 	if (n > slides.length) {
@@ -25,6 +28,17 @@ function showSlides(n) {
 	for (i = 0; i < dots.length; i++) {
 		dots[i].className = dots[i].className.replace(" active", "");
 	}
+
 	slides[slideIndex - 1].style.display = "flex";
 	dots[slideIndex - 1].className += " active";
 }
+
+setInterval(function () {
+	if (sec != 0) {
+		sec--;
+	} else {
+		showSlides((slideIndex += 1));
+
+		sec = 2;
+	}
+}, 1000);
