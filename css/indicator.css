@@ -1,0 +1,7 @@
+#indicator {
+	background-color: #fff;
+	height: 0.35rem;
+	width: 0;
+	position: fixed;
+	top: 0;
+}
