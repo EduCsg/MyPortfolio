@@ -1,9 +1,17 @@
 const indicator = document.querySelector("#indicator");
 
-const maxHeight = document.body.scrollHeight - window.innerHeight;
-
 window.addEventListener("scroll", () => {
-	const percentage = (window.scrollY / maxHeight) * 100;
-
-	indicator.style.width = `${percentage}%`;
+	scrollBarFunction();
 });
+
+function scrollBarFunction() {
+	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+	var height =
+		document.documentElement.scrollHeight -
+		document.documentElement.clientHeight;
+
+	var scrolled = (winScroll / height) * 100;
+
+	indicator.style.width = `${scrolled}%`;
+}
