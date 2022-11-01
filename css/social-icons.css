@@ -1,0 +1,54 @@
+.social-ul {
+	justify-content: center;
+	display: flex;
+}
+
+.social-ul .social-li {
+	position: relative;
+	list-style: none;
+	margin: 0 20px;
+	cursor: pointer;
+}
+
+.social-ul .social-li a {
+	text-decoration: none;
+}
+
+.social-ul .social-li a .fa-brands,
+.social-ul .social-li a .fa-regular {
+	font-size: 3em;
+	color: #222;
+}
+
+.social-ul .social-li a::before {
+	font-family: "FontAwesome";
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 3em;
+	height: 0;
+	overflow: hidden;
+	transition: 0.4s ease-in-out;
+}
+
+.social-ul li:nth-child(1) a::before {
+	content: "\f09b";
+	color: #fff;
+	border-bottom: 3px solid #fff;
+}
+
+.social-ul li:nth-child(2) a::before {
+	content: "\f08c";
+	color: #0a66c2;
+	border-bottom: 3px solid #0a66c2;
+}
+
+.social-ul li:nth-child(3) a::before {
+	content: "\f0e0";
+	color: #df5e60;
+	border-bottom: 3px solid #df5e60;
+}
+
+.social-ul li:hover a::before {
+	height: 100%;
+}
