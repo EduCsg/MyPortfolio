@@ -14,12 +14,12 @@
 }
 
 .card.firedlabs {
-	background-image: url(/assets/FiredLabsPrint.png);
+	background-image: url(../assets/FiredLabsPrint.png);
 }
 
 .card.firedlabs:hover,
 .card:focus-within {
-	background-image: url(/assets/FiredLabsPrintBlur.png);
+	background-image: url(../assets/FiredLabsPrintBlur.png);
 	transform: scale(1.05);
 }
 
