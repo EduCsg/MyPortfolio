@@ -1,0 +1,201 @@
+:root {
+	--clr-neutral-900: ;
+}
+
+.card {
+	color: #ffffff;
+	background-size: cover;
+	padding: 10rem 0 0;
+	max-width: 80ch;
+	border-radius: 0.5rem;
+	overflow: hidden;
+	transition: all 400ms ease;
+	margin-bottom: 50px;
+}
+
+.card.firedlabs {
+	background-image: url(/assets/FiredLabsPrint.png);
+}
+
+.card.firedlabs:hover,
+.card:focus-within {
+	background-image: url(/assets/FiredLabsPrintBlur.png);
+	transform: scale(1.05);
+}
+
+.card-content {
+	z-index: 10;
+	--padding: 1.5rem;
+	padding: var(--padding);
+	background: linear-gradient(
+		hsl(0 0% 0% / 0),
+		hsl(20 0% 0% / 0.3) 20%,
+		hsl(0 0% 0% / 1)
+	);
+	margin-bottom: -1px;
+}
+
+@media (hover) {
+	.card-content {
+		transform: translateY(65%);
+		transition: transform 500ms ease;
+	}
+
+	.card:hover .card-content,
+	.card:focus-within .card-content {
+		transform: translateY(0);
+		transition-delay: 500ms;
+	}
+
+	.card:focus-within .card-content {
+		transition-duration: 0ms;
+	}
+
+	.card-content > *:not(.card-title, .button) {
+		opacity: 0;
+		transition: opacity 500ms linear;
+	}
+
+	.card:hover .card-content > *:not(.card-title, .button),
+	.card:focus-within .card-content > *:not(.card-title, .button) {
+		opacity: 1;
+		transition-delay: 800ms;
+	}
+
+	.card-title::after {
+		transform: scaleX(0);
+	}
+}
+
+.card-title {
+	font-size: 1.5em;
+	line-height: 100%;
+	padding-bottom: 0.2rem;
+	font-family: var(--font-first);
+	position: relative;
+	width: max-content;
+	margin: 20px 0;
+}
+
+.card-title.green-color::after {
+	content: "";
+	position: absolute;
+	height: 4px;
+	left: calc(var(--padding) * -1);
+	bottom: -2px;
+	width: calc(100% + var(--padding));
+	background: rgb(66, 245, 132);
+	transform-origin: left;
+	transition: transform 500ms ease;
+}
+
+.button.green-color {
+	font-family: var(--font-first);
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	color: rgb(19, 23, 27);
+	background-color: rgb(66, 245, 132);
+	padding: 0.5em 1.25em;
+	border-radius: 0.25em;
+	transition: all 300ms ease-in-out;
+}
+
+.card:hover .card-title::after,
+.card:focus-within .card-title::after {
+	transform: scaleX(1);
+}
+
+.card-body {
+	font-family: var(--font-first);
+	color: rgb(255 255 255 / 0.85);
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	line-height: 1.4;
+}
+
+.button.green-color:hover,
+.button.blue-color:hover,
+.button.pink-color:hover,
+.button:focus {
+	background-color: #ffffff;
+}
+
+.wrap-buttons {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-title.blue-color::after {
+	content: "";
+	position: absolute;
+	height: 4px;
+	left: calc(var(--padding) * -1);
+	bottom: -2px;
+	width: calc(100% + var(--padding));
+	background: #42f5de;
+	transform-origin: left;
+	transition: transform 500ms ease;
+}
+
+.button.blue-color {
+	font-family: var(--font-first);
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	color: rgb(19, 23, 27);
+	background-color: #42f5de;
+	padding: 0.5em 1.25em;
+	border-radius: 0.25em;
+	transition: all 300ms ease-in-out;
+}
+
+.card.fastform {
+	/* background-image: url(/assets/FiredLabsPrint.png);*/
+	background-color: rgb(115, 36, 189);
+}
+
+.card.fastform:hover,
+.card:focus-within {
+	/* background-image: url(/assets/FiredLabsPrintBlur.png); */
+	background-color: rgb(154, 45, 255);
+	transform: scale(1.05);
+}
+
+.card-title.pink-color::after {
+	content: "";
+	position: absolute;
+	height: 4px;
+	left: calc(var(--padding) * -1);
+	bottom: -2px;
+	width: calc(100% + var(--padding));
+	background: #8442f5;
+	transform-origin: left;
+	transition: transform 500ms ease;
+}
+
+.button.pink-color {
+	font-family: var(--font-first);
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	color: rgb(19, 23, 27);
+	background-color: #8442f5;
+	padding: 0.5em 1.25em;
+	border-radius: 0.25em;
+	transition: all 300ms ease-in-out;
+}
+
+.card.udemy {
+	/* background-image: url(/assets/FiredLabsPrint.png);*/
+	background-color: rgb(36, 72, 189);
+}
+
+.card.udemy:hover,
+.card:focus-within {
+	/* background-image: url(/assets/FiredLabsPrintBlur.png); */
+	background-color: rgb(49, 96, 252);
+	transform: scale(1.05);
+}
