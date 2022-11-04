@@ -1,5 +1,5 @@
 let slideIndex = 1;
-var sec = 2;
+var sec = 4;
 
 showSlides(slideIndex);
 
@@ -13,6 +13,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
 	let i;
+	sec = 4;
 
 	let slides = document.getElementsByClassName("mySlides");
 	let dots = document.getElementsByClassName("dot");
@@ -39,6 +40,6 @@ setInterval(function () {
 	} else {
 		showSlides((slideIndex += 1));
 
-		sec = 2;
+		sec = 4;
 	}
 }, 1000);

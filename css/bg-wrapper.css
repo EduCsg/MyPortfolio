@@ -21,6 +21,11 @@
 	max-height: 55px;
 	transition: all 800ms ease-in-out;
 	transform: translateY(400%);
+	z-index: 100;
+}
+
+.arrow-up:hover {
+	cursor: pointer;
 }
 
 .arrowShow {

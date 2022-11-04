@@ -11,8 +11,6 @@ window.onscroll = () => {
 };
 
 arrow.addEventListener("click", () => {
-	// if (arrow.classList.contains("arrowHidden")) {
 	document.body.scrollTop = 0;
 	document.documentElement.scrollTop = 0;
-	// }
 });
