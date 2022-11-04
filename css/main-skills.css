@@ -1,0 +1,147 @@
+.main-skills {
+	background-color: #151515;
+}
+
+.wrapper-skills {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.skill-icon {
+	font-size: 5rem;
+	color: #fff;
+	margin-right: 1.2rem;
+}
+
+.skill-icon.flutter {
+	height: 70px;
+	filter: brightness(0) invert(1);
+	transition: all 400ms ease;
+}
+
+.skill-card .fa-html5,
+.skill-card .fa-css3-alt,
+.skill-card .fa-square-js {
+	transition: all 400ms ease;
+}
+
+.skill-card {
+	display: flex;
+	align-items: center;
+	background-color: rgb(37, 37, 37);
+	margin: 0px 50px;
+	padding: 40px;
+	border-radius: 8px;
+	transition: all 400ms ease;
+}
+
+.skill-card:hover {
+	transform: scale(1.1);
+}
+
+.skill-card:hover .flutter {
+	filter: none;
+}
+
+.skill-card:hover .fa-html5 {
+	color: #f24d2d;
+}
+
+.skill-card:hover .fa-css3-alt {
+	color: #29a9df;
+}
+
+.skill-card:hover .fa-square-js {
+	color: #efd81d;
+}
+
+.right-skills {
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.right-skills > h3 {
+	color: #fff;
+	font-family: var(--font-second);
+	font-size: 2rem;
+}
+
+.first-skills-row {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.second-skills-row {
+	display: flex;
+	margin-top: 60px;
+	width: 100%;
+	justify-content: center;
+}
+
+.progress-bar {
+	height: 25px;
+	width: 200px;
+	border: solid 3px #fff;
+	transition: all 400ms ease;
+}
+
+.progress-bar::-webkit-progress-bar {
+	background-color: #fff;
+	transition: all 400ms ease;
+}
+
+.progress-bar::-webkit-progress-value {
+	background-color: #151515;
+	transition: all 400ms ease;
+}
+
+.progress-bar::-moz-progress-bar {
+	background-color: #151515;
+	transition: all 400ms ease;
+}
+
+.progress-bar::-moz-progress-value {
+	background-color: #151515;
+}
+
+.skill-card:hover .progress-bar.html::-webkit-progress-value {
+	background-color: #f24d2d;
+}
+
+.skill-card:hover .progress-bar.html::-moz-progress-bar {
+	background-color: #f24d2d;
+}
+
+.skill-card:hover .progress-bar.css::-webkit-progress-value {
+	background-color: #29a9df;
+}
+
+.skill-card:hover .progress-bar.css::-moz-progress-bar {
+	background-color: #29a9df;
+}
+
+.skill-card:hover .progress-bar.js::-webkit-progress-value {
+	background-color: #efd81d;
+}
+
+.skill-card:hover .progress-bar.flutter::-webkit-progress-value {
+	background-color: #3fb6d3;
+}
+
+.skill-card:hover .progress-bar.flutter::-moz-progress-bar {
+	background-color: #3fb6d3;
+}
+
+.skill-card:hover .progress-bar.js::-webkit-progress-bar {
+	background-color: #151515;
+}
+
+.skill-card:hover .progress-bar.js {
+	height: 25px;
+	width: 200px;
+	border: solid 3px #151515;
+}
