@@ -2,19 +2,20 @@
 	display: flex;
 	background-color: transparent;
 	justify-content: end;
+	align-items: center;
 	position: absolute;
 	right: 5%;
 	top: 2%;
 }
 
-.navbar-items a li {
-	transition: all 400ms;
-	border-radius: 5%;
+.navbar-items li a {
 	padding: 20px;
 	margin: 0 10px;
+	transition: all 400ms;
+	border-radius: 5%;
 }
 
-.navbar-items a li:hover {
+.navbar-items li:hover a {
 	cursor: pointer;
 	filter: blur(20%);
 	background-color: white;
@@ -22,7 +23,7 @@
 	scale: 1.05;
 }
 
-.navbar-items a {
+.navbar-items li a {
 	color: white;
 	font-size: 1.2rem;
 	font-family: var(--font-first);
@@ -49,12 +50,12 @@
 	display: none;
 }
 
-.navbar-items a li:hover .download-icon {
+.navbar-items li:hover .download-icon {
 	filter: invert(0%);
 	display: none;
 }
 
-.navbar-items a li:hover .download-gif {
+.navbar-items li:hover .download-gif {
 	filter: invert(0%);
 	display: block;
 }
