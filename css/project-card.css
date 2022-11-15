@@ -13,8 +13,7 @@
 	background-image: url(../assets/FiredLabsPrint.png);
 }
 
-.card.firedlabs:hover,
-.card:focus-within {
+.card.firedlabs:hover {
 	background-image: url(../assets/FiredLabsPrintBlur.png);
 	transform: scale(1.05);
 }
@@ -149,13 +148,12 @@
 }
 
 .card.fastform {
-	/* background-image: url(/assets/FiredLabsPrint.png);*/
+	background-image: url(../assets/fastform.png);
 	background-color: rgb(115, 36, 189);
 }
 
-.card.fastform:hover,
-.card:focus-within {
-	/* background-image: url(/assets/FiredLabsPrintBlur.png); */
+.card.fastform:hover {
+	background-image: url(/assets/fastformblur.png);
 	background-color: rgb(154, 45, 255);
 	transform: scale(1.05);
 }
@@ -189,8 +187,7 @@
 	background-color: rgb(36, 72, 189);
 }
 
-.card.udemy:hover,
-.card:focus-within {
+.card.udemy:hover {
 	/* background-image: url(/assets/FiredLabsPrintBlur.png); */
 	background-color: rgb(49, 96, 252);
 	transform: scale(1.05);
