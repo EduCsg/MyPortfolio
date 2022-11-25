@@ -152,7 +152,7 @@
 }
 
 .card.fastform:hover {
-	background-image: url(/assets/fastformblur.png);
+	background-image: url(../assets/fastformblur.png);
 	transform: scale(1.05);
 }
 
