@@ -149,12 +149,10 @@
 
 .card.fastform {
 	background-image: url(../assets/fastform.png);
-	background-color: rgb(115, 36, 189);
 }
 
 .card.fastform:hover {
 	background-image: url(/assets/fastformblur.png);
-	background-color: rgb(154, 45, 255);
 	transform: scale(1.05);
 }
 
