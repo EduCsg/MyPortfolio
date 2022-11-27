@@ -27,6 +27,20 @@
 .marcobrunodev {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-family: var(--font-first);
+}
+
+.marcobrunodev > * {
+	font-size: 0.85rem;
+	padding: 0px 0.2rem;
+}
+
+.marcobrunodev > p {
+	text-decoration: underline white 1px;
 }
 
 .prev,
@@ -126,12 +140,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-}
-
-.marcobrunodev {
-	color: white;
-	font-family: var(--font-first);
-	font-family: 1rem;
 }
 
 .title-description-cursos {
