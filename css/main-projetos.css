@@ -14,3 +14,10 @@
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 }
+
+/* CELULAR */
+@media screen and (max-width: 767px) {
+	.main-projetos {
+		padding: 0px 30px;
+	}
+}

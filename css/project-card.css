@@ -46,13 +46,13 @@
 		transition-duration: 0ms;
 	}
 
-	.card-content > *:not(.card-title, .button) {
+	.card-content > *:not(.card-title, .button-cursos) {
 		opacity: 0;
 		transition: opacity 500ms linear;
 	}
 
-	.card:hover .card-content > *:not(.card-title, .button),
-	.card:focus-within .card-content > *:not(.card-title, .button) {
+	.card:hover .card-content > *:not(.card-title, .button-cursos),
+	.card:focus-within .card-content > *:not(.card-title, .button-cursos) {
 		opacity: 1;
 		transition-delay: 800ms;
 	}
@@ -84,7 +84,7 @@
 	transition: transform 500ms ease;
 }
 
-.button.green-color {
+.button-cursos.green-color {
 	font-family: var(--font-first);
 	cursor: pointer;
 	display: inline-block;
@@ -111,14 +111,19 @@
 	line-height: 1.4;
 }
 
-.button.green-color:hover,
-.button.blue-color:hover,
-.button.pink-color:hover,
-.button:focus {
+.button-cursos {
+	margin: 0px 10px;
+}
+
+.button-cursos.green-color:hover,
+.button-cursos.blue-color:hover,
+.button-cursos.pink-color:hover,
+.button-cursos:focus {
 	background-color: #ffffff;
 }
 
-.wrap-buttons {
+.wrap-buttons-cursos {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
@@ -135,7 +140,7 @@
 	transition: transform 500ms ease;
 }
 
-.button.blue-color {
+.button-cursos.blue-color {
 	font-family: var(--font-first);
 	cursor: pointer;
 	display: inline-block;
@@ -168,14 +173,14 @@
 	transition: transform 500ms ease;
 }
 
-.button.pink-color {
+.button-cursos.pink-color {
 	font-family: var(--font-first);
 	cursor: pointer;
 	display: inline-block;
 	text-decoration: none;
 	color: rgb(19, 23, 27);
 	background-color: #8442f5;
-	padding: 0.5em 1.25em;
+	padding: 0.5em 0.5em;
 	border-radius: 0.25em;
 	transition: all 300ms ease-in-out;
 }
@@ -189,4 +194,11 @@
 	/* background-image: url(/assets/FiredLabsPrintBlur.png); */
 	background-color: rgb(49, 96, 252);
 	transform: scale(1.05);
+}
+
+/* CELULAR */
+@media screen and (max-width: 767px) {
+	.main-projetos {
+		padding: 0px 30px;
+	}
 }
