@@ -2,18 +2,77 @@
 	position: absolute;
 	top: 25%;
 	left: 10%;
+	transition: all 900ms ease-in-out;
 }
 
 .header-title {
+	overflow: hidden;
+	border-right: 5px solid white;
+	white-space: nowrap;
+	animation: typing 1.5s steps(32, end), blink-caret 0.75s step-end infinite;
 	color: #fff;
 	font-size: 3rem;
 	font-family: var(--font-first);
-	margin-bottom: 1.5rem;
+	margin-bottom: 1rem;
 }
 
 .header-name {
+	opacity: 0;
 	color: #fff;
-	font-size: 2rem;
+	font-size: 1.8rem;
+	transform: translateY(-60px);
 	font-family: var(--font-second);
 	margin-bottom: 2.5rem;
+	filter: blur(8px);
+}
+
+.show-title {
+	display: block;
+	opacity: 1;
+	transform: translateX(0);
+	transition: all 800ms ease-in-out;
+	filter: blur(0px);
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: white;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header-title {
+		overflow: hidden;
+		border: none;
+		animation: none;
+		white-space: normal;
+		color: #fff;
+		font-size: 3rem;
+		font-family: var(--font-first);
+		margin-bottom: 1rem;
+	}
+
+	.header-name {
+		opacity: 1;
+		color: #fff;
+		font-size: 1.8rem;
+		transform: translateY(0);
+		font-family: var(--font-second);
+		margin-bottom: 2.5rem;
+		filter: blur(0);
+	}
 }
