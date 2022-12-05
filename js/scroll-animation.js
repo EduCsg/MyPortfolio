@@ -17,7 +17,7 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll(".hiddenSkills");
 hiddenElements.forEach((el) => observer.observe(el));
 
-//skil title show
+//skill title show
 
 const observerSkill = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
@@ -35,3 +35,24 @@ const observerSkill = new IntersectionObserver((entries) => {
 
 const skillTitle = document.querySelectorAll(".skills-title");
 skillTitle.forEach((el) => observerSkill.observe(el));
+
+//navItem show
+
+window.onload = () => {
+	navItems.forEach((entry) => {
+		entry.classList.add("showNavItem");
+		entry.classList.remove("hiddenNavItem");
+	});
+
+	// setTimeout(() => {
+	// 	headerTitle.classList.add("show-title");
+	// }, 500);
+
+	setTimeout(() => {
+		headerName.classList.add("show-title");
+	}, 1500);
+};
+
+const navItems = document.querySelectorAll(".menu-btn-li");
+const headerName = document.getElementsByClassName("header-name")[0];
+const headerTitle = document.getElementsByClassName("header-title")[0];

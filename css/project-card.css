@@ -111,6 +111,12 @@
 	line-height: 1.4;
 }
 
+.card-body a {
+	color: white;
+	text-decoration: none;
+	border-bottom: 2px solid #42f5de;
+}
+
 .button-cursos {
 	margin: 0px 10px;
 }

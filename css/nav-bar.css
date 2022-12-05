@@ -59,3 +59,30 @@
 	filter: invert(0%);
 	display: block;
 }
+
+.hiddenNavItem {
+	transform: translateY(-100px);
+	filter: blur(10px);
+}
+
+.showNavItem {
+	transform: translateY(0);
+	display: block;
+	filter: blur(0);
+}
+
+.showNavItem:nth-child(1) {
+	transition: all 900ms ease-in-out;
+}
+.showNavItem:nth-child(2) {
+	transition: all 800ms ease-in-out;
+}
+.showNavItem:nth-child(3) {
+	transition: all 700ms ease-in-out;
+}
+.showNavItem:nth-child(4) {
+	transition: all 800ms ease-in-out;
+}
+.showNavItem:nth-child(5) {
+	transition: all 900ms ease-in-out;
+}
