@@ -1,6 +1,7 @@
 .main-projetos {
 	padding: 100px 150px;
-
+	padding-top: 6rem;
+	padding-bottom: 6rem;
 	background: rgb(21, 21, 21);
 	background: linear-gradient(
 		180deg,

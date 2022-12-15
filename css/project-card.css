@@ -5,8 +5,31 @@
 	max-width: 80ch;
 	border-radius: 0.5rem;
 	overflow: hidden;
-	transition: all 400ms ease;
 	margin-bottom: 50px;
+}
+
+.projeto-hidden {
+	opacity: 0;
+	filter: blur(5px);
+	transform: translateY(150px);
+}
+
+.projeto-show {
+	transform: translateY(0);
+	opacity: 1;
+	filter: blur(0px);
+}
+
+.projeto-show:nth-child(1) {
+	transition: all 600ms ease-in-out !important;
+}
+
+.projeto-show:nth-child(2) {
+	transition: all 800ms ease-in-out !important;
+}
+
+.projeto-show:nth-child(3) {
+	transition: all 600ms ease-in-out !important;
 }
 
 .card.firedlabs {
@@ -16,6 +39,7 @@
 .card.firedlabs:hover {
 	background-image: url(../assets/FiredLabsPrintBlur.png);
 	transform: scale(1.05);
+	transition: all 300ms ease !important;
 }
 
 .card-content {
@@ -165,6 +189,7 @@
 .card.fastform:hover {
 	background-image: url(../assets/fastformblur.png);
 	transform: scale(1.05);
+	transition: all 300ms ease !important;
 }
 
 .card-title.pink-color::after {
@@ -200,6 +225,7 @@
 	/* background-image: url(/assets/FiredLabsPrintBlur.png); */
 	background-color: rgb(49, 96, 252);
 	transform: scale(1.05);
+	transition: all 300ms ease !important;
 }
 
 /* CELULAR */

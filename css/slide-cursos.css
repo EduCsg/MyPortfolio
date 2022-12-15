@@ -2,6 +2,8 @@
 	padding-top: 100px;
 	padding-bottom: 100px;
 	background-color: #151515;
+	padding-top: 6rem;
+	padding-bottom: 6rem;
 }
 
 .slideshow-container {
@@ -119,6 +121,7 @@
 	font-weight: 300;
 	font-family: var(--font-first);
 	text-align: center;
+	animation: all 100ms linear;
 }
 
 .main-subtitle > a {
@@ -164,6 +167,19 @@
 	to {
 		opacity: 1;
 	}
+}
+
+.slide-hidden {
+	filter: blur(20px);
+	opacity: 0;
+	transform: translateY(200px);
+}
+
+.slide-show {
+	opacity: 1;
+	filter: blur(0%);
+	transform: translateY(0px);
+	transition: all 800ms ease-in-out;
 }
 
 .mySlides.fade {

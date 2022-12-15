@@ -6,11 +6,6 @@ const observer = new IntersectionObserver((entries) => {
 			entry.target.classList.add("showSkills");
 			entry.target.classList.remove("hiddenSkills");
 		}
-
-		// else {
-		// 	entry.target.classList.remove("showSkills");
-		// 	entry.target.classList.add("hiddenSkills");
-		// }
 	});
 });
 
@@ -18,23 +13,41 @@ const hiddenElements = document.querySelectorAll(".hiddenSkills");
 hiddenElements.forEach((el) => observer.observe(el));
 
 //skill title show
+//cursos title
 
-const observerSkill = new IntersectionObserver((entries) => {
+const observerTitle = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
 		if (entry.isIntersecting) {
 			entry.target.classList.add("showTitle");
 			entry.target.classList.remove("hiddenTitle");
 		}
-
-		// else {
-		// 	entry.target.classList.remove("showSkills");
-		// 	entry.target.classList.add("hiddenSkills");
-		// }
 	});
 });
 
-const skillTitle = document.querySelectorAll(".hiddenTitle");
-skillTitle.forEach((el) => observerSkill.observe(el));
+const skillTitle = document.querySelectorAll(".skills-title");
+skillTitle.forEach((el) => observerTitle.observe(el));
+
+const cursosTitle = document.querySelectorAll(".cursos-title");
+cursosTitle.forEach((el) => observerTitle.observe(el));
+
+const projetosTitle = document.querySelectorAll(".projetos-title");
+projetosTitle.forEach((el) => observerTitle.observe(el));
+
+//cursos wrapper
+
+const observerSlide = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		setTimeout(() => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add("slide-show");
+				entry.target.classList.remove("slide-hidden");
+			}
+		}, 600);
+	});
+});
+
+const slideWrapper = document.querySelectorAll(".slide-wrapper");
+slideWrapper.forEach((el) => observerSlide.observe(el));
 
 //SUBTITLE
 
@@ -44,7 +57,7 @@ const observerSubtitle = new IntersectionObserver((entries) => {
 			setTimeout(() => {
 				entry.target.classList.add("showSubtitle");
 				entry.target.classList.remove("hiddenSubtitle");
-			}, 400);
+			}, 800);
 		}
 
 		// else {
@@ -65,10 +78,6 @@ window.onload = () => {
 		entry.classList.remove("hiddenNavItem");
 	});
 
-	// setTimeout(() => {
-	// 	headerTitle.classList.add("show-title");
-	// }, 500);
-
 	setTimeout(() => {
 		headerName.classList.add("show-title");
 	}, 1500);
@@ -77,3 +86,19 @@ window.onload = () => {
 const navItems = document.querySelectorAll(".menu-btn-li");
 const headerName = document.getElementsByClassName("header-name")[0];
 const headerTitle = document.getElementsByClassName("header-title")[0];
+
+//projetos show
+
+const observerProject = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		setTimeout(() => {
+			if (entry.isIntersecting) {
+				entry.target.classList.add("projeto-show");
+				entry.target.classList.remove("projeto-hidden");
+			}
+		}, 600);
+	});
+});
+
+const projectWrapper = document.querySelectorAll(".card");
+projectWrapper.forEach((el) => observerProject.observe(el));

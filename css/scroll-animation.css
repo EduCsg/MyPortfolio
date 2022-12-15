@@ -55,14 +55,14 @@
 .hiddenSubtitle {
 	opacity: 0;
 	filter: blur(5px);
-	transform: translateX(-400px);
+	transform: translateY(-40px);
 }
 
 .showSubtitle {
 	opacity: 1;
-	transform: translateX(0px);
+	transform: translateY(0px);
 	filter: blur(0);
-	transition: all 800ms ease-in-out;
+	transition: all 600ms ease-in-out;
 }
 
 @media (prefers-reduced-motion) {
