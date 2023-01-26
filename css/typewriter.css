@@ -1,0 +1,19 @@
+#typewriter {
+	color: #fff;
+	font-size: 3rem;
+	border-right: 5px solid #fff;
+	animation: blink 1s linear infinite;
+	font-family: var(--font-first);
+}
+
+@keyframes blink {
+	0% {
+		border-right: 5px solid #fff;
+	}
+	50% {
+		border-right: 5px solid transparent;
+	}
+	100% {
+		border-right: 5px solid #fff;
+	}
+}
